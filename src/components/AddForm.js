@@ -5,7 +5,6 @@ import {addSmurf, setError} from '../actions';
 const AddForm = (props) => {
 
 
-
     const [state, setState] = useState({
         name:"",
         position:"",
@@ -31,7 +30,7 @@ const AddForm = (props) => {
         }
         props.addSmurf()
     }
-
+    
     
 
     return(<section>

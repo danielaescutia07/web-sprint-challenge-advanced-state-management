@@ -9,7 +9,7 @@ import { fetchSmurfs } from '../actions';
 
     useEffect(() => {
         fetchSmurfs();
-      }, []);
+      }, [fetchSmurfs]);
     
     if (loading) {
         return <h1>Loading...</h1>;
