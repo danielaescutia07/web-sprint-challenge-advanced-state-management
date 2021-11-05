@@ -1,6 +1,15 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 
 const AddForm = (props) => {
+
+    axios.get('http://localhost:3333/smurfs')
+        .then(res => {
+            console.log(res)
+        })
+
+
+
     const [state, setState] = useState({
         name:"",
         position:"",
